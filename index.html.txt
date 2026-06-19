@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control - Escáner QR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="kiosk-container">
+    <div class="header">
+        <h1>Estación de Escaneo</h1>
+        <p>Apunta un código QR hacia la cámara</p>
+    </div>
+
+    <div class="scanner-window">
+        <div id="reader"></div>
+    </div>
+
+    <div class="status-panel">
+        <div id="statusBadge" class="badge badge-ready">
+            <span>Listo para escanear</span>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
